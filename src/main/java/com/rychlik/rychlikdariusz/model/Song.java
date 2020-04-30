@@ -48,8 +48,8 @@ public class Song {
     public void setArtists(Set<Artist> artists) { this.artists = artists; }
 
 
-    public Song(String genere) {
-        this.genre = genere;
+    public Song(String genre) {
+        this.genre = genre;
     }
 
     public Song(Set<Artist> artists) {
@@ -62,12 +62,12 @@ public class Song {
     public void setTitle(String title) { this.title = title; }
 
 
-    public String getGenere() {
+    public String getGenre() {
         return genre;
     }
 
-    public void setGenere(String genere) {
-        this.genre = genere;
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 
 
@@ -97,7 +97,7 @@ public class Song {
         return "Song{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
-                ", genere='" + genre + '\'' +
+                ", genre='" + genre + '\'' +
                 ", ismn='" + ismn + '\'' +
                 ", year='" + year + '\'' +
                 ", publisher='" + publisher + '\'' +

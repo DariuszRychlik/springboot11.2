@@ -18,6 +18,7 @@ public class Artist {
     private Set<Song> songs = new HashSet<>();
 
     public Artist() {
+
     }
     public Artist(String firstName, String lastName, String nick) {
         this.firstName = firstName;
