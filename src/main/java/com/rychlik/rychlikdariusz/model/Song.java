@@ -15,14 +15,14 @@ public class Song {
     private String ismn;
     private String year;
 
-    private String publisher;
 
     @ManyToMany
     private Set<Artist> artists = new HashSet<>();
 
 
 
-    public Song() { }
+    public Song() {
+    }
 
     public Song(String title, String genre, String ismn, String year) {
         this.title = title;
@@ -48,13 +48,9 @@ public class Song {
     public void setArtists(Set<Artist> artists) { this.artists = artists; }
 
 
-    public Song(String genre) {
-        this.genre = genre;
-    }
+    //public Song(String genre) { this.genre = genre; }
 
-    public Song(Set<Artist> artists) {
-        this.artists = artists;
-    }
+    //public Song(Set<Artist> artists) { this.artists = artists; }
 
 
     public String getTitle() { return title; }
@@ -62,33 +58,21 @@ public class Song {
     public void setTitle(String title) { this.title = title; }
 
 
-    public String getGenre() {
-        return genre;
-    }
+    public String getGenre() { return genre; }
 
-    public void setGenre(String genre) {
-        this.genre = genre;
-    }
+    public void setGenre(String genre) { this.genre = genre; }
 
 
 
-    public String getIsmn() {
-        return ismn;
-    }
+    public String getIsmn() { return ismn; }
 
-    public void setIsmn(String ismn) {
-        this.ismn = ismn;
-    }
+    public void setIsmn(String ismn) { this.ismn = ismn; }
 
 
 
-    public String getYear() {
-        return year;
-    }
+    public String getYear() { return year; }
 
-    public void setYear(String year) {
-        this.year = year;
-    }
+    public void setYear(String year) { this.year = year; }
 
 
 
@@ -100,7 +84,6 @@ public class Song {
                 ", genre='" + genre + '\'' +
                 ", ismn='" + ismn + '\'' +
                 ", year='" + year + '\'' +
-                ", publisher='" + publisher + '\'' +
                 ", artists=" + artists +
                 '}';
     }

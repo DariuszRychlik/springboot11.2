@@ -10,20 +10,20 @@ import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.ApplicationListener;
 
 @Component
-public class DBInfkater implements ApplicationListener< ContextRefreshedEvent > {
+public class DBInflater implements ApplicationListener< ContextRefreshedEvent > {
 
-    public DBInfkater(ArtistRepository artistRepository) {
+    public DBInflater(ArtistRepository artistRepository) {
         this.artistRepository = artistRepository;
     }
 
-    public DBInfkater(SongRepository songRepository) {
+    public DBInflater(SongRepository songRepository) {
         this.songRepository = songRepository;
     }
 
     private SongRepository songRepository;
     private ArtistRepository artistRepository;
 
-    public DBInfkater() {
+    public DBInflater() {
     }
 
     @Override
