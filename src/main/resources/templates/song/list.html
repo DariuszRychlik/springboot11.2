@@ -31,7 +31,6 @@
                                 </thead>
                                 <tr th:each="song : ${songs}">
                                     <td th:text="${song.title}">A great pretender</td>
-                                    <td th:text="${song.publisher.name}">EMI</td>
                                     <td th:text="${song.year}">1998</td>
                                     <td>
                                         <a href="#" th:href="@{'/song/' + ${song.id} + '/show'}" style="margin-right: 5px;">View</a>

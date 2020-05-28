@@ -13,9 +13,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
-/**
- * Created by pk on 2019-06-03
- */
 @Component
 public class ArtistCommandToArtist implements Converter<ArtistCommand, Artist> {
 
