@@ -12,19 +12,16 @@ import org.springframework.context.ApplicationListener;
 @Component
 public class DBInflater implements ApplicationListener< ContextRefreshedEvent > {
 
-    public DBInflater(ArtistRepository artistRepository) {
-        this.artistRepository = artistRepository;
-    }
-
-    public DBInflater(SongRepository songRepository) {
+    public DBInflater(SongRepository songRepository, ArtistRepository artistRepository) {
         this.songRepository = songRepository;
+        this.artistRepository = artistRepository;
     }
 
     private SongRepository songRepository;
     private ArtistRepository artistRepository;
 
-    public DBInflater() {
-    }
+    //public DBInflater() {
+    //}
 
     @Override
     public void onApplicationEvent( ContextRefreshedEvent contextRefreshedEvent ) { initData(); }
